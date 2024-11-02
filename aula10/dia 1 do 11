@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form name="form1" method="post" action="http://hebertphp.awardspace.us/recebe.php">
+        <input type="image" src="giphy.gif"><br>
+        <label for="login">Login</label> <input type="text" id="login" name="login" placeholder="Digite seu login" required><b>*</b><br>
+        <label for="senha">Senha</label> <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><b>*</b><br>
+        Data <input type="datetime-local" id="data" name="data"><br>
+    
+        <input type="hidden" name="vai" value="já foi"><br>
+        <Input type="image" src="736n.gif">
+            <h2>Selecione uma ou mais linguagens</h2>
+            <input type="checkbox" name="js" id="js" checked> <label for="js">JS</label><br>
+            <input type="checkbox" name="php" id="php"> <label for="php">PHP</label><br>
+            <input type="checkbox" name="sql" id="sql"> <label for="sql">SQL</label><br>
+            <input type="submit" value="Enviar!"> <input type="reset" value="resetar">
+            <h2>Qual dia da semanda da aula de HTML/CSS?</h2>
+
+            <input type="radio" name="Segunda" value="seg" id="seg"><label for="seg">Segunda</label><br>
+            <input type="radio" name="Terça" value="ter" id="ter"><label for="ter">Terça</label><br>
+            <input type="radio" name="Quarta" value="qua" id="qua"><label for="qua">Quarta</label><br>
+            <input type="radio" name="Quinta" value="qui" id="qui"><label for="qui">Quinta</label><br>
+            <input type="radio" name="Sexta" value="sex" id="sex" required> <label for="sex">Sexta</label><br>
+            <input type="radio" name="Sabado" value="sab" id="sab"><label for="sab">Sabado</label><br>
+            <input type="radio" name="Domingo" value="dom" id="dom"><label for="dom">Domingo</label><br>
+<p>
+            Selecione UF<select name="uf">
+<option value="RJ">Rio de Janeiro</option>
+<option>ES</option>
+<option selected>SP</option> 
+<option>MG</option>
+</select><br>
+</p>
+Mensagem <textarea name="msg" rows="1" cols="14">Digite sua msg</textarea>
+    </form><br>
+    <p><b>*</b> - Campo obrigaório</p>
+</body>
+</html>
